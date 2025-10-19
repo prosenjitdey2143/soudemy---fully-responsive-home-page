@@ -1,0 +1,661 @@
+@font-face {
+    font-family: productSans;
+    src: url(fonts/ProductSans-Regular.ttf);
+}
+
+:root {
+    --white: #FFFFFF;
+    --white-shade: #EFEFEF;
+    --black: #373737;
+    --black-shade: #8A8A8A;
+    --footer-background: #2B2B2B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: productSans, sans-serif;
+    font-size: 23px;
+    color: var(--black-shade);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h5-heading,
+h6 {
+    font-weight: 700;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 49px;
+
+}
+
+h2 {
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 36px;
+
+}
+
+h4,
+.h4-heading {
+    font-size: 29px;
+
+}
+
+h5,
+.h5-heading {
+    font-style: 23px;
+
+}
+
+h6 {
+    font-size: 21px;
+
+}
+
+.container,
+.nav-container {
+    max-width: 1334px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col20 {
+    flex: 0 0 20%;
+    width: 20%;
+    padding: 0 15px;
+}
+
+.col25 {
+    flex: 0 0 25%;
+    width: 25%;
+    padding: 0 15px;
+}
+
+.col30 {
+    flex: 0 0 30%;
+    width: 30%;
+    padding: 0 15px;
+}
+
+.col33 {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.col50 {
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.col100 {
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.cmn-btn {
+    padding: 28px 56px;
+}
+
+.cmn-btn i {
+    margin-left: 23px;
+}
+
+.btn-dark {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.btn-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+/* header css */
+.header {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    right: 0;
+    color: var(--white);
+}
+
+.header .navbox {
+    display: flex;
+    align-items: center;
+}
+
+.header .brand {
+    margin-right: 84px;
+
+}
+
+.navlinks {
+    display: flex;
+    flex-grow: 1;
+
+}
+
+.navlinks li {
+    margin-right: 46px;
+}
+
+.navlinks li a {
+    transition: 0.2s all ease-in;
+}
+
+.nav-buttons button {
+    margin-left: 41px;
+    color: var(--white);
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+}
+
+.navlinks li a:hover,
+.nav-buttons button:hover {
+    transform: scale(1.1);
+}
+
+
+/* banner section css */
+.banner {
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1028px;
+    color: white;
+}
+
+.banner .banner-desc {
+    max-width: 50%;
+    padding-top: 263px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner .banner-desc h1 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.banner .banner-desc p {
+    margin-bottom: 44px;
+}
+
+/* product of the week section css */
+.week {
+    margin: 72px 0;
+}
+
+.week .row .col100 {
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+.week .row .col100 h2 {
+    margin-bottom: 40px;
+}
+
+.week .row {
+    margin: 0 -22px;
+}
+
+.week .row .col100 p {
+    padding: 0 315px;
+    text-justify: inter-cluster;
+}
+
+.week .row .col33 {
+    padding: 0 22px;
+}
+
+.week .row .col33 figcaption {
+    margin-top: 27px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.week .row .col33 figcaption .h5-heading {
+    margin-bottom: 10px;
+}
+
+/* info section css */
+.info {
+    padding: 65px 0;
+    background-image: url(images/infoBackground.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.info .information {
+    max-width: 45%;
+    text-align: center;
+    margin-left: auto;
+}
+
+.info .information p {
+    margin-bottom: 44px;
+}
+
+.media {
+    max-height: 523px;
+}
+
+/* product section css */
+.products .container .row {
+    align-items: center;
+    margin: 143px 0;
+}
+
+.products .container .row .col50 img {
+    width: 100%;
+}
+
+.products .container .row .col50 {
+    text-align: center;
+}
+
+.products .container .row .col50 h2 {
+    margin-bottom: 37px;
+    text-transform: uppercase;
+}
+
+.products .container .row .col50 p {
+    margin-bottom: 48px;
+}
+
+/* delivery section css */
+.deivery {
+    padding: 100px 0;
+    background-color: var(--white-shade);
+}
+
+.deivery .row .col100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deivery .row .col100 h3 {
+    margin-right: 60px;
+    font-weight: 400;
+}
+
+.deivery .row .col100 h3 strong {
+    font-weight: 700;
+
+}
+
+/* benefits section css */
+.benefits {
+    padding: 166px 0;
+}
+
+.benefits .row .col25 h4 {
+    margin-bottom: 24px;
+}
+
+.benefits .row .col25 h4 i {
+    margin-right: 20px;
+}
+
+/* examples section css */
+.examples {
+    margin-bottom: 84px;
+}
+
+.examples .row {
+    margin: 0 -38px;
+}
+
+.examples .row .col50 {
+    padding: 0 38px;
+}
+
+.examples .row .col50 figure figcaption {
+    text-align: center;
+    margin-top: 26px;
+    padding: 0 25%;
+}
+
+.examples .row .col50 figure figcaption span {
+    font-size: 20px;
+    display: block;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.examples .row .col50 figure figcaption h5 {
+    margin-bottom: 26px;
+
+}
+
+.examples .row .col50 figure figcaption a {
+    text-decoration: underline 2px #777777;
+    color: #777777;
+    font-size: 20px;
+}
+
+/* reviews section css */
+.reviews {
+    padding: 30px 0 73px;
+    background-color: var(--white-shade);
+}
+
+.reviews .row .col100 {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews .row .col100 .quotetion {
+    max-width: 50%;
+    text-align: center;
+
+}
+
+.reviews .row .col100 .quotetion span {
+    font-size: 104px;
+    display: block;
+    color: var(--black);
+    margin-bottom: 25px;
+}
+
+.reviews .row .col100 .quotetion .quote {
+    margin-bottom: 40px;
+}
+
+.reviews .row .col100 .quotetion h6 {
+    margin-bottom: 11px;
+}
+
+.reviews .row .col100 .quotetion p {
+    color: var(--black);
+}
+
+/* footer css */
+.footer {
+    padding: 36px 0 56px;
+    background: var(--footer-background);
+}
+
+.footer .row .col100 a {
+    font-size: 31px;
+    margin-bottom: 47px;
+}
+
+.footer .row .col25 {
+    padding-right: 45px;
+}
+
+.footer .row .col25 .footer-heading {
+    font-size: 26px;
+    margin-bottom: 36px;
+}
+
+.footer .row .col100,
+.footer .row .col25 .footer-heading {
+    color: var(--white);
+}
+
+.footer .row .col25 li {
+    margin-bottom: 16px;
+}
+
+.footer .row .col25 .footer-desc {
+    margin-bottom: 30px;
+}
+
+.footer .row .col25 .footer-heading~a {
+    margin-bottom: 20px;
+}
+
+
+/* media queries */
+@media (max-width:1024px) {
+
+    .benefits .row .col25,
+    .footer .col25 {
+        flex: 0 0 50%;
+        width: 50%;
+
+        margin-bottom: 30px;
+    }
+
+    .benefits .row .col25 {
+        text-align: center;
+    }
+}
+
+@media (max-width:991px) {
+    .header .navbox .brand {
+        flex-grow: 1;
+    }
+
+    .header .navlinks {
+        display: none;
+    }
+
+    .banner .banner-desc {
+        max-width: 80vw;
+    }
+
+    .week .row .col100 p {
+        padding: 0 100px;
+    }
+
+    .deivery .row .col100 {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .deivery .row .col100 h3 {
+        margin-right: unset;
+
+    }
+
+    @media(max-width:767px) {
+        .benefits {
+            padding: 100px 0;
+        }
+
+        .benefits .row .col25 {
+            text-align: center;
+        }
+
+        .reviews .row .col100 .quotetion {
+            max-width: 80%;
+            text-align: center;
+
+        }
+
+        .footer {
+            padding: 36px 0;
+            background: var(--footer-background);
+        }
+    }
+
+    /* optional  */
+    @media(max-width:600px) {
+        .cmn-btn {
+            padding: 18px 36px;
+        }
+
+        .info .information {
+            max-width: 100%;
+
+        }
+
+        .products .container .row {
+            flex-direction: column;
+            gap: 30px;
+            margin: 80px 0;
+        }
+
+        .products .container .row .col50 {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+
+        .examples .row {
+            margin: 0 -15px;
+        }
+
+        .examples .row .col50 {
+            padding: 0 15px;
+        }
+
+        .examples .row .col50 figure figcaption {
+            padding: 0 15px;
+        }
+
+        .reviews {
+            padding: 40px 0;
+            background-color: var(--white-shade);
+        }
+
+        .reviews .row .col100 .quotetion span {
+            font-size: 34px;
+        }
+
+        .footer .row .col25 .footer-heading~a {
+            word-break: break-all;
+        }
+    }
+
+    @media(max-width:575px) {
+        .week .row .col100 h2 {
+            margin-bottom: 20px;
+        }
+
+        .week .row .col100 p {
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width:480px) {
+        body {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 29px;
+
+        }
+
+        h4,
+        .h4-heading {
+            font-size: 24px;
+
+        }
+
+        .navbox .brand {
+            margin-right: unset;
+            flex-grow: 1;
+        }
+
+        .products .container .row .col50 p {
+            margin-bottom: 28px;
+        }
+
+        .benefits .col25,
+        .footer .col25 {
+            flex: 0 0 100%;
+            width: 100%;
+
+        }
+    }
+
+    @media(max-width:420px) {
+        .week .row {
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .week .row .col33 {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+
+    }
+
+    /* /optional/ */
+    @media(max-width:375px) {
+        .benefits {
+            padding: 50px;
+        }
+
+        .benefits .row .col25,
+        .examples .row .col50,
+        .footer .col25 {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+
+        .examples .row {
+            gap: 28px;
+        }
+
+        .footer .col25 {
+            text-align: center;
+        }
+    }
