@@ -459,7 +459,6 @@ h6 {
   .footer .col25 {
     flex: 0 0 50%;
     width: 50%;
-
     margin-bottom: 30px;
   }
 
@@ -525,6 +524,10 @@ h6 {
     max-width: 100%;
   }
 
+  .benefits .row .col25 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
   .products .container .row {
     flex-direction: column;
     gap: 30px;
@@ -573,7 +576,7 @@ h6 {
   .examples .row {
     gap: 30px;
   }
-  .benefits .col25,
+
   .footer .col25,
   .examples .row .col50 {
     flex: 0 0 100%;
