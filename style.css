@@ -575,6 +575,10 @@ h6 {
     flex: 0 0 100%;
     width: 100%;
   }
+  .examples .row .col50 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
