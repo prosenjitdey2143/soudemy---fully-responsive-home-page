@@ -570,11 +570,11 @@ h6 {
   .week .row .col100 p {
     padding: 0 15px;
   }
-  .benefits .col25,
-  .footer .col25 {
-    flex: 0 0 100%;
-    width: 100%;
+  .examples .row {
+    gap: 30px;
   }
+  .benefits .col25,
+  .footer .col25,
   .examples .row .col50 {
     flex: 0 0 100%;
     width: 100%;
@@ -626,18 +626,6 @@ h6 {
   .benefits {
     padding: 50px;
   }
-
-  .benefits .row .col25,
-  .examples .row .col50,
-  .footer .col25 {
-    flex: 0 0 100%;
-    width: 100%;
-  }
-
-  .examples .row {
-    gap: 28px;
-  }
-
   .footer .col25 {
     text-align: center;
   }
