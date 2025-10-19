@@ -19,11 +19,9 @@ The layout automatically adapts to different screen sizes:
 - **Tablet  
 - **Mobile  
 
-## 💻 Preview
-![Preview](images/project.png)
 
 ## 🔗 Live Demo
-[Click here to view the live demo](#) *(Add your deployed link here)*
+[Click here to view the live demo](#) *( https://prosenjitdey2143.github.io/soudemy---fully-responsive-home-page/)*
 
 ## 📂 How to Use
 1. Clone the repository:
